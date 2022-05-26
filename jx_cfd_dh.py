@@ -111,7 +111,6 @@ def cfd_qq(def_start_time):
         put_envs(u_cookie.get('_id'), u_cookie.get('name'), u_cookie.get('value'), msg)
         disable_env(u_cookie.get('_id'))
     print("实际发送[{}]\n耗时[{:.3f}]\n用户[{}]\n结果[{}]".format(d1, (t2 - t1), u_pin, msg))
-    print("返回结果json=====》"+data)
 
 
 if __name__ == '__main__':
