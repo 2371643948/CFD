@@ -101,7 +101,7 @@ def cfd_qq(def_start_time):
         put_envs(u_start_dist.get('_id'), u_start_dist.get('name'), str(start_time)[:8])
     elif data['iRet'] == 1014:
         # URL过期
-        pass
+        msg = "URL过期"
     elif data['iRet'] == 2007:
         # 财富值不够
         put_envs(u_cookie.get('_id'), u_cookie.get('name'), u_cookie.get('value'), msg)
