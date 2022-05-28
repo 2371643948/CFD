@@ -81,6 +81,8 @@ def cfd_qq(def_start_time):
     res = requests.get(cfd_url, headers=headers)
     t2 = time.time()
     # 进行json转换
+    # 输出返回值
+    print(res.text)
     data = json.loads(res.text)
     msg = data['sErrMsg']
     # 根据返回值判断
